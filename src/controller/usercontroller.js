@@ -18,6 +18,7 @@ export const productFunction = async (req, res, next) => {
     });
     console.log(newProduct);
     const newProductAdded = await newProduct.save();
+    console.log("line 21");
     res.json({
       Success: true,
       newProduct: {
